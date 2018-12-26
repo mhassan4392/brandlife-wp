@@ -1,0 +1,358 @@
+/*
+Theme Name: brandlife
+Author: Muhammad Hassan
+Description: Its a theme designed for Brand Life.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: brandlife
+*/
+
+
+
+
+
+
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+ .slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+ .slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}  
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+.slider-header{
+    font-size: 3rem;
+}
+
+.slider-text{
+    font-size: 1.5rem;
+}
+
+.slider-col-1{
+    margin-left: 100px;
+}
+
+.slider-btns{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.slider-btn-1,.slider-btn-2{
+  padding: 3px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#testimonial-slider,
+.testimonial-wrap,
+.testimonial-slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 400px;
+  overflow-x: hidden;
+  background-position: cover;
+  
+}
+
+.testimonial-wrap {
+  position: relative;
+}
+
+.testimonial-slide {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-img{
+  width: 100px;
+  height: 100px;
+}
+
+
+.testimonial-slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 70%;
+  color: white;
+}
+
+.testimonial-text{
+  font-size: 1.3rem;
+}
+
+.testimonial-slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.testimonial-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  /* border-style: solid; */
+  color: gray;
+}
+
+#testimonial-arrow-left {
+  /* border-width: 30px 40px 30px 0; */
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#testimonial-arrow-right {
+  /* border-width: 30px 0 30px 40px; */
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+
+
+
+/* scroll btn to top */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #e6e6e6; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px; /* Some padding */
+  font-size: 14px; /* Increase font size */
+}
+
+
+
+
+/* Comments */
+.commentlist li{
+  list-style-type: none;
+}
+
+.comment{
+  background: #f8f9fa;
+}
+
+
+.comment-body{
+  /* margin: 20px; */
+  position: relative;
+}
+
+.comment-author img{
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.comment-author .says{
+  display: none;
+}
+
+.comment-metadata{
+  margin-top: -15px;
+  margin-left: 45px;
+  font-size: 0.8rem;
+}
+
+.comment-content{
+  margin-left: 60px;
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+}
+
+.reply{
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-weight: 500;
+}
+
+.comment .children{
+  padding-left: 50px;
+}
+
+.parent{
+  margin-bottom: 60px;
+}
+
+.comment{
+  padding: 10px;
+}
+
+
+
+
+
+/* form */
+
+#respond{
+  padding: 10px;
+}
+
+.comment-form-comment label, .comment-form-author label, .comment-form-email label, .comment-form-url, .comment-notes{
+  display: none;
+}
+
+.comment-form-email input , .comment-form-author input{
+  width: 100%;
+  background: #eee;
+  padding:15px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.comment-form-comment textarea{
+  width: 100%;
+  background: #eee;
+  padding:15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.comment-form-comment textarea:focus{
+  border-radius: 10px;
+  border: none;
+}
+
+.comment-form-email{
+  width: 47%;
+  float: right;
+}
+
+.comment-form-author{
+  width: 47%;
+  float: left;
+}
+
+.comment-reply-title{
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+.form-submit .submit{
+  background: #343a40;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+/* post navigation */
+
+.pre-next-post{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.next-post,.pre-post{
+  flex-basis: 40%;
+}
+
+.pre-next-img{
+  flex-basis: 20%;
+}
+
+
+
+
